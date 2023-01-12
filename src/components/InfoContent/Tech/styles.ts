@@ -21,6 +21,10 @@ export const TechContainer = styled("section", {
       border: "1px solid $gray800",
     },
   },
+  
+  "@media(max-width:1119px)": {
+    gridTemplateColumns: "repeat(4, 1fr)",
+  },
 });
 
 export const TooltipContent = styled(Tooltip.Content, {

@@ -7,6 +7,7 @@ export const globalStyles = globalCss({
     
     "::-webkit-scrollbar": {
       width: 6,
+      height: 6,
     },
 
     "::-webkit-scrollbar-track": {
@@ -22,6 +23,5 @@ export const globalStyles = globalCss({
   body: {
     "-webkit-font-smoothing": "antialiased",
     background: '$black',
-    // overflowX: 'hidden',
   },
 });

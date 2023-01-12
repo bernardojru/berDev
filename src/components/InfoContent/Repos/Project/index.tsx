@@ -17,8 +17,6 @@ interface Repos {
 }
 
 export function Project({ repos }: Repos) {
-  // const rep: any = repos.topics
-  // const topics = rep.split(' ')
   return (
     <ProjectContainer>
       <Icons>
@@ -37,9 +35,7 @@ export function Project({ repos }: Repos) {
           Nome: <Quantity>{repos.name}</Quantity>
         </strong>
         <span>
-
           <Quantity>{repos.language}</Quantity>
-          {/* <Quantity>{topics}</Quantity> */}
         </span>
       </Tags>
     </ProjectContainer>

@@ -13,7 +13,7 @@ export const ProfileContainer = styled("section", {
   height: '30rem',
   width: '30rem',
   position: 'sticky',
-  top: '0',
+  top: '1rem',
 
   '@media(max-width:1119px)': {
     position: 'static',

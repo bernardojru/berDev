@@ -44,7 +44,6 @@ export const Icons = styled("section", {
       border: "2px solid $gray500",
       transition: "all .2s ease-in-out",
     },
-    //   outline: "2px solid $gray600",
   },
 });
 

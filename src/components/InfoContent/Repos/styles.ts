@@ -1,14 +1,19 @@
 import { keyframes, styled } from "../../../styles";
 
 export const ReposContainer = styled("section", {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
 });
 
 export const ReposConst = styled("div", {
   display: "grid",
+  width: '100%',
   gridTemplateColumns: "repeat(2, 1fr)",
+
+  "@media(max-width:1119px)": {
+    gridTemplateColumns: "repeat(1, 1fr)",
+  },
 });
 
 const Load = keyframes({
