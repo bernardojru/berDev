@@ -1,4 +1,10 @@
-import { CheckCircle, BookBookmark, Atom, TrendUp, Compass } from "phosphor-react";
+import {
+  CheckCircle,
+  BookBookmark,
+  Atom,
+  TrendUp,
+  Compass,
+} from "phosphor-react";
 import {
   ProfileContainer,
   ProfileDetails,
@@ -10,8 +16,11 @@ import {
 
 import Image from "next/image";
 
+import { Feedback } from "../Feedback";
+import * as Dialog from "@radix-ui/react-dialog";
+
 import { Techs } from "../InfoContent/Tech/server";
-import {Certificates} from '../InfoContent/Certificate/server'
+import { Certificates } from "../InfoContent/Certificate/server";
 
 import TechReactImg from "../../assets/Tech/reactjs.svg";
 import TechNextImg from "../../assets/Tech/nextjs.svg";
@@ -19,7 +28,7 @@ import TechTypescriptImg from "../../assets/Tech/typescript.svg";
 
 export function Profile() {
   const quantityTech = Techs.length;
-  const quantityCertificates = Certificates.length
+  const quantityCertificates = Certificates.length;
 
   return (
     <ProfileContainer>
@@ -46,14 +55,22 @@ export function Profile() {
         </span>
         <span>
           <Atom size={15} weight="fill" />
-          Tecnologias que tenho experiência: <Quantity>{quantityTech}</Quantity>
+          Tecnologias que possuo experiência: <Quantity>{quantityTech}</Quantity>
         </span>
         <span>
           <TrendUp size={15} weight="fill" />
           Experiência: <Quantity>+ 2 de anos</Quantity>
         </span>
       </ProfileDetails>
-      <Questions> <Compass size={20} /> FEEDBACK</Questions>
+
+      <Dialog.Root>
+        <Dialog.Trigger asChild>
+          <Questions>
+            <Compass size={20} /> FEEDBACK
+          </Questions>
+        </Dialog.Trigger>
+        <Feedback />
+      </Dialog.Root>
     </ProfileContainer>
   );
 }

@@ -1,4 +1,5 @@
 import { styled } from "../../styles/.";
+import * as Tooltip from "@radix-ui/react-tooltip";
 
 export const HeaderContainer = styled("header", {
   width: "100%",
@@ -29,3 +30,18 @@ export const HeaderContainer = styled("header", {
 });
 
 export const CV = styled("span", {}); //button do cv
+
+export const TooltipContent = styled(Tooltip.Content, {
+  padding: '$3 $4',
+  background: '$gray600',
+  color: '$gray100',
+  fontFamily: '$default',
+  fontSize: '$sm',
+  borderRadius: '$xs',
+  fontWeight: '$medium',
+  filter: 'drop-shadow(4px 16px 24px rgba(0, 0, 0, 0.25))',
+});
+
+export const TooltipArrow = styled(Tooltip.Arrow, {
+  fill: '$gray600',
+}) 

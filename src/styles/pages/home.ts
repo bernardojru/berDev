@@ -6,7 +6,6 @@ export const PortfolioContainer = styled('div',{
     display: 'flex',
     flexDirection: 'column',
     fontFamily: '$default',
-
 })
 
 export const PortfolioContent = styled('div', {

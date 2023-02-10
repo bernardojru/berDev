@@ -13,7 +13,9 @@ export const {
   theme: {
     colors: {
       white: "#FFF",
-      black: "#000",
+      black: "",
+
+      transparent: "rgba(0, 0, 0, 0.75)",
 
       gray100: "#E1E1E6",
       gray200: "#A9A9B2",
@@ -24,11 +26,11 @@ export const {
       gray800: "#202024",
       gray900: "#121214",
 
-      blue100: '#6866FB',
-      blue200: '#5659EB',
-      blue300: '#4347FE',
-      blue400: '#3846D4',
-      blue500: '#3846D4',
+      blue100: "#6866FB",
+      blue200: "#5659EB",
+      blue300: "#4347FE",
+      blue400: "#3846D4",
+      blue500: "#3846D4",
     },
 
     lineHeights: {

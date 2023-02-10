@@ -9,11 +9,7 @@ export const ProjectContainer = styled("div", {
   borderRadius: "$xs",
   background: "$gray800",
   border: "2px solid $gray800",
-
-  img: {
-    width: "100%",
-    height: "5rem",
-  },
+  cursor: 'default',
 
   "&:hover": {
     border: "2px solid $blue200",

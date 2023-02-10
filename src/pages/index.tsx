@@ -4,21 +4,24 @@ import { globalStyles } from "../styles/global";
 import { Profile } from "../components/Profile";
 import { InfoContent } from "../components/InfoContent";
 import { Header } from "../components/Header";
+import { useThemes } from "../hooks/useThemes";
 
 globalStyles();
 
 export default function Portfolio() {
+  const { themes } = useThemes();
   return (
     <>
       <Head>
         <title>Home | Bernardo José</title>
       </Head>
-      <PortfolioContainer>
+      <PortfolioContainer className={themes}>
         <Header />
         <PortfolioContent>
           <Profile />
           <InfoContent />
         </PortfolioContent>
+        {/* <button>botão para cima fazer</button> */}
       </PortfolioContainer>
     </>
   );

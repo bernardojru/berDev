@@ -27,5 +27,5 @@ const Load = keyframes({
 
 export const Loading = styled("span", {
   textAlign: "center",
-  animation: ` 2s linear   ${Load}  infinite`,
+  animation: ` 2s linear  ${Load}  infinite`,
 });

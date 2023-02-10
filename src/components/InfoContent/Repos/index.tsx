@@ -1,4 +1,4 @@
-import { CircleNotch } from "phosphor-react";
+import { CircleNotch, MagnifyingGlass } from "phosphor-react";
 import { useEffect, useState } from "react";
 import { api } from "../../../lib/axios";
 import { Project } from "./Project";
@@ -31,7 +31,7 @@ export function Repos() {
       {repos.length > 0 ? (
         <ReposConst>
           {repos.map((repo) => (
-            <Project key={repo.id} repos={repo} />
+            <>{repo.homepage && <Project key={repo.id} repos={repo} />}</>
           ))}
         </ReposConst>
       ) : (
@@ -42,4 +42,3 @@ export function Repos() {
     </ReposContainer>
   );
 }
-
