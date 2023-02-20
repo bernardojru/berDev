@@ -5,6 +5,6 @@ export const SucessFormContainer = styled("div", {
   alignItems: 'center',
   flexDirection: "column",
   gap: "$10",
-  padding: "$5",
+  padding: "$1",
   width: "100%",
 });

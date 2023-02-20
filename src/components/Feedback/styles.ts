@@ -17,7 +17,7 @@ export const FeedbackContainer = styled(Dialog.Content, {
   justifyContent: "center",
   fontFamily: "$default",
   border: "solid 1px $blue200",
-  padding: "$5",
+  padding: "$4",
   borderRadius: "$lg",
   background: "$gray900",
   color: "$gray200",
@@ -37,21 +37,4 @@ export const FeedbackContainer = styled(Dialog.Content, {
     justifyContent: "space-between",
   },
 
-});
-
-export const CloseButton = styled(Dialog.Close, {
-  background: "transparent",
-  borderRadius: "$xs",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  cursor: "pointer",
-  color: "$gray200",
-  padding: "$1",
-  border: "2px solid $gray900",
-
-  "&:hover": {
-    background: "$gray700",
-    transition: "all .2s ease-in-out",
-  },
 });
