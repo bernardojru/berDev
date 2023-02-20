@@ -7,7 +7,7 @@ export function Description() {
     <DescriptionContainer>
       <h2>Sobre mim</h2>
       <p>
-        Comecei os meus estudos na programação com 14 anos, com o desejo de criar um jogo estuda loucamente
+        Comecei os meus estudos na programação com 14 anos, com o desejo de criar um jogo estudava loucamente
       </p>
       <footer>
         <Link href="https://github.com/bernardojru" target="_blank">

@@ -59,7 +59,6 @@ export const ProfileDetails = styled("div", {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  // gap: "$3",
   background: "$gray800",
   borderRadius: "$xs",
   marginTop: "$5",
