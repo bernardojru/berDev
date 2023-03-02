@@ -6,9 +6,14 @@ export function Description() {
   return (
     <DescriptionContainer>
       <h2>Sobre mim</h2>
+      <p>Meu nome é Bernardo, e tenho 19 anos.</p>
       <p>
-        Comecei os meus estudos na programação com 14 anos, com o desejo de criar um jogo estudava loucamente
+        Sou programador full-stack, apaixonado por tecnologia, e tenho 2 anos de
+        experiência com essas tecnologias: Nextjs, TypeScript,
+        TailwindCSS, Nodejs.
       </p>
+
+      <p>Quando não estou trabalhando, estou codando algum projeto pessoal.</p>
       <footer>
         <Link href="https://github.com/bernardojru" target="_blank">
           <GithubLogo size={15} weight="fill" /> GitHub

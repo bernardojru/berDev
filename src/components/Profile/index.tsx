@@ -4,6 +4,7 @@ import {
   Atom,
   TrendUp,
   Compass,
+  ChatTeardropDots,
 } from "phosphor-react";
 import {
   ProfileContainer,
@@ -55,7 +56,8 @@ export function Profile() {
         </span>
         <span>
           <Atom size={15} weight="fill" />
-          Tecnologias que possuo experiência: <Quantity>{quantityTech}</Quantity>
+          Tecnologias que possuo experiência:{" "}
+          <Quantity>{quantityTech}</Quantity>
         </span>
         <span>
           <TrendUp size={15} weight="fill" />
@@ -66,7 +68,7 @@ export function Profile() {
       <Dialog.Root>
         <Dialog.Trigger asChild>
           <Questions>
-            <Compass size={20} /> FEEDBACK
+            <ChatTeardropDots size={20} /> FEEDBACK
           </Questions>
         </Dialog.Trigger>
         <Feedback />

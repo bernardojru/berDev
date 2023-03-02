@@ -10,15 +10,15 @@ export const ProfileContainer = styled("section", {
   borderRadius: "$xs",
   background: "$gray900",
   color: "$gray200",
-  height: '30rem',
-  width: '30rem',
-  position: 'sticky',
-  top: '1rem',
+  height: "30rem",
+  width: "30rem",
+  position: "sticky",
+  top: "1rem",
 
-  '@media(max-width:1119px)': {
-    position: 'static',
-    width: '100%',
-  }
+  "@media(max-width:1119px)": {
+    position: "static",
+    width: "100%",
+  },
 });
 
 export const User = styled("div", {
@@ -52,6 +52,12 @@ export const Tech = styled("div", {
   img: {
     width: "2rem",
     height: "2rem",
+    transition: "all .2s ease-in-out",
+    borderRadius: '$md',
+
+    "&:hover": {
+      transform: "translateY(-5px)",
+    },
   },
 });
 
@@ -62,8 +68,8 @@ export const ProfileDetails = styled("div", {
   background: "$gray800",
   borderRadius: "$xs",
   marginTop: "$5",
-  width: '100%',
-  
+  width: "100%",
+
   span: {
     padding: "$2",
     display: "flex",
@@ -88,10 +94,10 @@ export const Questions = styled("button", {
   color: "$white",
   border: "2px solid $blue200",
   cursor: "pointer",
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  gap: '$2',
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "$2",
 
   "&:hover": {
     background: "transparent",

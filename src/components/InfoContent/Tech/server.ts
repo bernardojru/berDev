@@ -58,6 +58,6 @@ export const Techs = [
   {
     id: 10,
     img: TechCsstImg,
-    tag: 'Css3 / 2 years of experience',
+    tag: 'Css3',
   },
 ];

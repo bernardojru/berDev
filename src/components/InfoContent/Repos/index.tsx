@@ -1,4 +1,4 @@
-import { CircleNotch, MagnifyingGlass } from "phosphor-react";
+import { SpinnerGap } from "phosphor-react";
 import { useEffect, useState } from "react";
 import { api } from "../../../lib/axios";
 import { Project } from "./Project";
@@ -36,7 +36,7 @@ export function Repos() {
         </ReposConst>
       ) : (
         <Loading>
-          <CircleNotch size={70} />
+          <SpinnerGap size={70}/>
         </Loading>
       )}
     </ReposContainer>
