@@ -1,15 +1,15 @@
 import { Overlay, FeedbackContainer } from "./styles";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Form } from "./Form";
-import { SucessForm } from "./SucessForm";
+import { SuccessForm } from "./SucessForm";
 
 export function Feedback() {
-  const isSubmit = false;
+  const isSubmit = true;
   return (
     <Dialog.Portal>
       <Overlay />
       <FeedbackContainer>
-        {isSubmit ? <Form /> : <SucessForm />}
+        {isSubmit ? <Form /> : <SuccessForm />}
       </FeedbackContainer>
     </Dialog.Portal>
   );

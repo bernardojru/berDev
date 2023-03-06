@@ -3,8 +3,8 @@ import {
   BookBookmark,
   Atom,
   TrendUp,
-  Compass,
   ChatTeardropDots,
+  ArrowFatLinesUp,
 } from "phosphor-react";
 import {
   ProfileContainer,
@@ -13,6 +13,8 @@ import {
   Quantity,
   Questions,
   Tech,
+  ButtonToTop,
+  ButtonContainer,
 } from "./styles";
 
 import Image from "next/image";
@@ -30,6 +32,13 @@ import TechTypescriptImg from "../../assets/Tech/typescript.svg";
 export function Profile() {
   const quantityTech = Techs.length;
   const quantityCertificates = Certificates.length;
+
+  function scrollUp() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
 
   return (
     <ProfileContainer>
@@ -65,14 +74,19 @@ export function Profile() {
         </span>
       </ProfileDetails>
 
-      <Dialog.Root>
-        <Dialog.Trigger asChild>
-          <Questions>
-            <ChatTeardropDots size={20} /> FEEDBACK
-          </Questions>
-        </Dialog.Trigger>
-        <Feedback />
-      </Dialog.Root>
+      <ButtonContainer>
+        <Dialog.Root>
+          <Dialog.Trigger asChild>
+            <Questions>
+              <ChatTeardropDots size={20} /> FEEDBACK
+            </Questions>
+          </Dialog.Trigger>
+          <Feedback />
+        </Dialog.Root>
+        <ButtonToTop onClick={scrollUp}>
+          <ArrowFatLinesUp size={20} />
+        </ButtonToTop>
+      </ButtonContainer>
     </ProfileContainer>
   );
 }

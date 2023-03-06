@@ -10,10 +10,11 @@ globalStyles();
 
 export default function Portfolio() {
   const { themes } = useThemes();
+
   return (
     <>
       <Head>
-        <title>Home | Bernardo José</title>
+        <title>Bernardo José</title>
       </Head>
       <PortfolioContainer className={themes}>
         <Header />
@@ -21,7 +22,6 @@ export default function Portfolio() {
           <Profile />
           <InfoContent />
         </PortfolioContent>
-        {/* <button>botão para cima fazer</button> */}
       </PortfolioContainer>
     </>
   );

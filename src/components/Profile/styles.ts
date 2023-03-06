@@ -53,7 +53,7 @@ export const Tech = styled("div", {
     width: "2rem",
     height: "2rem",
     transition: "all .2s ease-in-out",
-    borderRadius: '$md',
+    borderRadius: "$md",
 
     "&:hover": {
       transform: "translateY(-5px)",
@@ -84,6 +84,14 @@ export const Quantity = styled("small", {
   fontWeight: "$bold",
 });
 
+export const ButtonContainer = styled("div", {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "$3",
+  width: "100%",
+});
+
 export const Questions = styled("button", {
   marginTop: "$2",
   width: "100%",
@@ -102,5 +110,34 @@ export const Questions = styled("button", {
   "&:hover": {
     background: "transparent",
     transition: "all .4s ease-in-out",
+  },
+});
+
+export const ButtonToTop = styled("button", {
+  marginTop: "$2",
+  width: "100%",
+  padding: "$3",
+  borderRadius: "$xs",
+  fontWeight: "800",
+  background: "$blue200",
+  color: "$white",
+  border: "2px solid $blue200",
+  cursor: "pointer",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "$2",
+
+  "&:hover": {
+    background: "transparent",
+    transition: "all .4s ease-in-out",
+  },
+
+  "@media(max-width:1119px)": {
+    position: "fixed",
+    width: "3rem",
+    height: "3rem",
+    right: "1.2rem",
+    bottom: "1rem",
   },
 });

@@ -1,8 +1,8 @@
 import { styled } from "../../../styles";
 
-export const SucessFormContainer = styled("div", {
+export const SuccessFormContainer = styled("div", {
   display: "flex",
-  alignItems: 'center',
+  alignItems: "center",
   flexDirection: "column",
   gap: "$10",
   padding: "$1",
