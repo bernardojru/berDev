@@ -25,17 +25,24 @@ export function Form() {
   return (
     <FormContainer onSubmit={handleSubmit(handleSendFeedback)}>
       <header>
-        <strong>Deixe seu feedback</strong>
         <CloseButton>
           <X size={15} weight="bold" />
         </CloseButton>
       </header>
+      <strong>Deixe aqui a sua ideia de projeto</strong>
+      <span>
+        Vamos por a mão na massa? Conte me sobre o seu projeto. Vou te responder
+        em breve. 👇
+      </span>
       <input
         type="email"
         placeholder="Digite o seu email"
         {...register("email")}
       />
-      <textarea placeholder="Enviar alguma pergunta" {...register("content")} />
+      <textarea
+        placeholder="Fale sobre o projeto ..."
+        {...register("content")}
+      />
       <ButtonForm type="submit" disabled={isSubmitting}>
         Enviar Feedback
       </ButtonForm>

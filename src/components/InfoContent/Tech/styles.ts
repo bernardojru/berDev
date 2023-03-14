@@ -3,11 +3,11 @@ import * as Tooltip from "@radix-ui/react-tooltip";
 
 export const TechContainer = styled("section", {
   display: "grid",
-  gap:'$3' ,
+  gap: "$3",
   alignContent: "center",
   justifyItems: "center",
   gridTemplateColumns: "repeat(7, 1fr)",
-  fontFamily:'$default',
+  fontFamily: "$default",
 
   button: {
     border: "none",
@@ -21,23 +21,23 @@ export const TechContainer = styled("section", {
       border: "1px solid $gray800",
     },
   },
-  
+
   "@media(max-width:1119px)": {
     gridTemplateColumns: "repeat(4, 1fr)",
   },
 });
 
 export const TooltipContent = styled(Tooltip.Content, {
-  padding: '$3 $4',
-  background: '$gray600',
-  color: '$gray100',
-  fontFamily: '$default',
-  fontSize: '$sm',
-  borderRadius: '$xs',
-  fontWeight: '$medium',
-  filter: 'drop-shadow(4px 16px 24px rgba(0, 0, 0, 0.25))',
+  padding: "$3 $4",
+  background: "$gray600",
+  color: "$gray100",
+  fontFamily: "$default",
+  fontSize: "$sm",
+  borderRadius: "$md",
+  fontWeight: "$medium",
+  filter: "drop-shadow(4px 16px 24px rgba(0, 0, 0, 0.25))",
 });
 
 export const TooltipArrow = styled(Tooltip.Arrow, {
-  fill: '$gray600',
-}) 
+  fill: "$gray600",
+});

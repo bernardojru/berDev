@@ -23,7 +23,7 @@ export const DescriptionContainer = styled("section", {
       gap: "$3",
       padding: "$1 $3",
       color: "$gray200",
-      borderRadius: "$xs",
+      borderRadius: "$md",
       cursor: "pointer",
 
       "&:hover": {

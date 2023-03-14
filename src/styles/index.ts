@@ -13,7 +13,7 @@ export const {
   theme: {
     colors: {
       white: "#FFF",
-      black: "",
+      black: "#000",
 
       transparent: "rgba(0, 0, 0, 0.75)",
 

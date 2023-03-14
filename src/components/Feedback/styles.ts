@@ -1,4 +1,4 @@
-import { styled } from "../../styles/.";
+import { keyframes, styled } from "../../styles/.";
 import * as Dialog from "@radix-ui/react-dialog";
 
 export const Overlay = styled(Dialog.Overlay, {
@@ -22,9 +22,9 @@ export const FeedbackContainer = styled(Dialog.Content, {
   background: "$gray900",
   color: "$gray200",
   position: "fixed",
+  transform: "translate(-50%, -50%)",
   top: "50%",
   left: "50%",
-  transform: "translate(-50%, -50%)",
 
   "@media(max-width:375px)": {
     minWidth: "20rem",
@@ -36,5 +36,4 @@ export const FeedbackContainer = styled(Dialog.Content, {
     alignItems: "center",
     justifyContent: "space-between",
   },
-
 });

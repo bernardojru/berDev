@@ -8,11 +8,20 @@ export const FormContainer = styled("form", {
   padding: "$2",
   width: "100%",
 
+  strong: {
+    textAlign: "center",
+  },
+
+  span: {
+    margin: "$5",
+    textAlign: "center",
+  },
+
   input: {
     color: "$white",
     height: "1.5rem",
     background: "$gray900",
-    borderRadius: "$xs",
+    borderRadius: "$md",
     border: "1px solid $gray700",
     padding: "$2",
 
@@ -31,7 +40,7 @@ export const FormContainer = styled("form", {
     height: "5rem",
     background: "$gray900",
     resize: "none",
-    borderRadius: "$xs",
+    borderRadius: "$md",
     border: "1px solid $gray700",
     padding: "$2",
     fontWeight: "$bold",
@@ -48,8 +57,9 @@ export const FormContainer = styled("form", {
 });
 
 export const CloseButton = styled(Dialog.Close, {
+  position: "absolute",
   background: "transparent",
-  borderRadius: "$xs",
+  borderRadius: "$md",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -57,6 +67,7 @@ export const CloseButton = styled(Dialog.Close, {
   color: "$gray200",
   padding: "$1",
   border: "2px solid $gray900",
+  right: "$3",
 
   "&:hover": {
     background: "$gray700",
@@ -71,7 +82,7 @@ export const ButtonForm = styled("button", {
   background: "$blue200",
   color: "$white",
   fontWeight: "800",
-  borderRadius: "$xs",
+  borderRadius: "$md",
   textTransform: "uppercase",
   cursor: "pointer",
 

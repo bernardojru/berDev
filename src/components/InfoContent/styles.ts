@@ -5,7 +5,7 @@ export const InfoContentContainer = styled("div", {
   flexDirection: "column",
   alignItems: "center",
   gap: "$2",
-  borderRadius: "$xs",
+  borderRadius: "$md",
   color: "$gray200",
   width: "100%",
   marginTop: "4rem",
@@ -18,14 +18,13 @@ export const InfoContentHeader = styled("header", {
   justifyContent: "center",
   gap: "$3",
   padding: "$3",
-  borderRadius: "$xs",
+  borderRadius: "$md",
   border: "solid 1px $gray800",
   background: "$gray900",
-  overflow: 'hidden',
+  overflow: "hidden",
 
-    
   "@media(max-width:375px)": {
-    overflowX: 'scroll',
+    overflowX: "scroll",
   },
 });
 
@@ -38,7 +37,7 @@ export const Button = styled("button", {
   borderRadius: "$lg",
   fontWeight: "$bold",
   border: "1px solid $gray800",
-  
+
   variants: {
     color: {
       isFocus: {
@@ -46,7 +45,7 @@ export const Button = styled("button", {
       },
     },
   },
-  
+
   "&:hover": {
     background: "$gray800",
     color: "$gray100",
@@ -58,7 +57,7 @@ export const Button = styled("button", {
 export const InfoContentMain = styled("main", {
   width: "100%",
   padding: "$3",
-  borderRadius: "$xs",
+  borderRadius: "$md",
   border: "solid 1px $gray800",
   background: "$gray900",
 });
