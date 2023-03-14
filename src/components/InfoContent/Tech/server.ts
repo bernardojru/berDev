@@ -8,56 +8,62 @@ import TechTailwindtImg from "../../../assets/Tech/tailwindcss.svg";
 import TechJavascriptImg from "../../../assets/Tech/javascript.svg";
 import TechHtml5tImg from "../../../assets/Tech/html5.svg";
 import TechCsstImg from "../../../assets/Tech/css3.svg";
+import TechDockerImg from "../../../assets/Tech/docker.svg";
 
 export const Techs = [
   {
     id: 1,
     img: TechReactImg,
-    tag: 'Reactjs'
+    tag: "Reactjs",
   },
   {
     id: 2,
     img: TechNextImg,
-    tag: 'NextJs',
+    tag: "NextJs",
   },
   {
     id: 3,
     img: TechNodeImg,
-    tag: 'NodeJs',
+    tag: "NodeJs",
   },
   {
     id: 4,
     img: TechNestImg,
-    tag: 'NestJs',
+    tag: "NestJs",
   },
   {
     id: 5,
     img: TechStitchesImg,
-    tag: 'Stitches',
+    tag: "Stitches",
   },
   {
     id: 6,
     img: TechTypescriptImg,
-    tag: 'Typescript',
+    tag: "Typescript",
   },
   {
     id: 7,
     img: TechHtml5tImg,
-    tag: 'Html5',
+    tag: "Html5",
   },
   {
     id: 8,
     img: TechJavascriptImg,
-    tag: 'Javascript',
+    tag: "Javascript",
   },
   {
     id: 9,
     img: TechTailwindtImg,
-    tag: 'TailwindCss',
+    tag: "TailwindCss",
   },
   {
     id: 10,
     img: TechCsstImg,
-    tag: 'Css3',
+    tag: "Css3",
+  },
+  {
+    id: 10,
+    img: TechDockerImg,
+    tag: "Docker",
   },
 ];

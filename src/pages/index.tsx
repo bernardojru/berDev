@@ -14,7 +14,7 @@ export default function Portfolio() {
   return (
     <>
       <Head>
-        <title>Bernardo José</title>
+        <title>Bernardo José | Portfolio</title>
       </Head>
       <PortfolioContainer className={themes}>
         <Header />
