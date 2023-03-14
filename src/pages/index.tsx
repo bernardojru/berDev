@@ -4,19 +4,16 @@ import { globalStyles } from "../styles/global";
 import { Profile } from "../components/Profile";
 import { InfoContent } from "../components/InfoContent";
 import { Header } from "../components/Header";
-import { useThemes } from "../hooks/useThemes";
 
 globalStyles();
 
 export default function Portfolio() {
-  const { themes } = useThemes();
-
   return (
     <>
       <Head>
         <title>Bernardo José | Portfolio</title>
       </Head>
-      <PortfolioContainer className={themes}>
+      <PortfolioContainer>
         <Header />
         <PortfolioContent>
           <Profile />
