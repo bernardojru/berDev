@@ -5,7 +5,7 @@ export const InfoContentContainer = styled("div", {
   flexDirection: "column",
   alignItems: "center",
   gap: "$2",
-  borderRadius: "$md",
+  borderRadius: "$xs",
   color: "$gray200",
   width: "100%",
   marginTop: "4rem",
@@ -18,7 +18,7 @@ export const InfoContentHeader = styled("header", {
   justifyContent: "center",
   gap: "$3",
   padding: "$3",
-  borderRadius: "$md",
+  borderRadius: "$xs",
   border: "solid 1px $gray800",
   background: "$gray900",
   overflow: "hidden",
@@ -57,7 +57,7 @@ export const Button = styled("button", {
 export const InfoContentMain = styled("main", {
   width: "100%",
   padding: "$3",
-  borderRadius: "$md",
+  borderRadius: "$xs",
   border: "solid 1px $gray800",
   background: "$gray900",
 });

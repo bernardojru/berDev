@@ -11,16 +11,12 @@ import {
   ProfileDetails,
   User,
   Quantity,
-  Questions,
   Tech,
   ButtonToTop,
   ButtonContainer,
 } from "./styles";
 
 import Image from "next/image";
-
-import { Feedback } from "../Feedback";
-import * as Dialog from "@radix-ui/react-dialog";
 
 import { Techs } from "../InfoContent/Tech/server";
 import { Certificates } from "../InfoContent/Certificate/server";
@@ -75,14 +71,6 @@ export function Profile() {
       </ProfileDetails>
 
       <ButtonContainer>
-        <Dialog.Root>
-          <Dialog.Trigger asChild>
-            <Questions>
-              <ChatTeardropDots size={20} /> FEEDBACK
-            </Questions>
-          </Dialog.Trigger>
-          <Feedback />
-        </Dialog.Root>
         <ButtonToTop onClick={scrollUp}>
           <ArrowFatLinesUp size={20} />
         </ButtonToTop>

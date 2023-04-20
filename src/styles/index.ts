@@ -14,6 +14,7 @@ export const {
     colors: {
       white: "#FFF",
       black: "#000",
+      error: "#ff4040",
 
       transparent: "rgba(0, 0, 0, 0.75)",
 

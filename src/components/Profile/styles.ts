@@ -7,7 +7,7 @@ export const ProfileContainer = styled("section", {
   gap: "$3",
   border: "solid 1px $gray800",
   padding: "$3",
-  borderRadius: "$md",
+  borderRadius: "$xs",
   background: "$gray900",
   color: "$gray200",
   height: "30rem",
@@ -66,7 +66,7 @@ export const ProfileDetails = styled("div", {
   flexDirection: "column",
   justifyContent: "center",
   background: "$gray800",
-  borderRadius: "$md",
+  borderRadius: "$xs",
   marginTop: "$5",
   width: "100%",
 
@@ -92,32 +92,11 @@ export const ButtonContainer = styled("div", {
   width: "100%",
 });
 
-export const Questions = styled("button", {
-  marginTop: "$2",
-  width: "100%",
-  padding: "$3",
-  borderRadius: "$md",
-  fontWeight: "800",
-  background: "$blue200",
-  color: "$white",
-  border: "2px solid $blue200",
-  cursor: "pointer",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  gap: "$2",
-
-  "&:hover": {
-    background: "transparent",
-    transition: "all .4s ease-in-out",
-  },
-});
-
 export const ButtonToTop = styled("button", {
   marginTop: "$2",
   width: "100%",
   padding: "$3",
-  borderRadius: "$md",
+  borderRadius: "$xs",
   fontWeight: "800",
   background: "$blue200",
   color: "$white",
