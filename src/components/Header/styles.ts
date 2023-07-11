@@ -1,5 +1,5 @@
+import Link from "next/link";
 import { styled } from "../../styles/.";
-import * as Tooltip from "@radix-ui/react-tooltip";
 
 export const HeaderContainer = styled("header", {
   width: "100%",
@@ -7,7 +7,7 @@ export const HeaderContainer = styled("header", {
   height: "5rem",
   display: "flex",
   alignItems: "center",
-  justifyContent: "end",
+  justifyContent: "center",
 
   button: {
     margin: "1rem",
@@ -20,7 +20,7 @@ export const HeaderContainer = styled("header", {
     alignItems: "center",
     justifyContent: "center",
     cursor: "pointer",
-    outline: 'none',
+    outline: "none",
 
     "&:hover": {
       outline: "2px solid $gray600",
@@ -29,19 +29,19 @@ export const HeaderContainer = styled("header", {
   },
 });
 
-export const CV = styled("span", {}); //button do cv
-
-export const TooltipContent = styled(Tooltip.Content, {
-  padding: '$3 $4',
-  background: '$gray600',
-  color: '$gray100',
-  fontFamily: '$default',
-  fontSize: '$sm',
-  borderRadius: '$xs',
-  fontWeight: '$medium',
-  filter: 'drop-shadow(4px 16px 24px rgba(0, 0, 0, 0.25))',
+export const NavBarMenu = styled("nav", {
+  display: "flex",
+  gap: "$5",
+  alignItems: "center",
+  justifyContent: "center",
 });
 
-export const TooltipArrow = styled(Tooltip.Arrow, {
-  fill: '$gray600',
-}) 
+export const RouteLink = styled(Link, {
+  color: "$gray500",
+  textDecoration: "none",
+
+  "&:hover": {
+    color: "$gray200",
+    transition: "all .2s ease-in-out",
+  },
+});

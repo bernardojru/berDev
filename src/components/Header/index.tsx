@@ -1,7 +1,12 @@
-import * as Tooltip from "@radix-ui/react-tooltip";
-import { HeaderContainer, TooltipContent, TooltipArrow } from "./styles";
-import { Moon, Sun } from "phosphor-react";
+import { HeaderContainer, NavBarMenu, RouteLink } from "./styles";
 
 export function Header() {
-  return <HeaderContainer></HeaderContainer>;
+  return (
+    <HeaderContainer>
+      <NavBarMenu>
+        <RouteLink href="/">Home</RouteLink>
+        <RouteLink href="/cv">CV</RouteLink>
+      </NavBarMenu>
+    </HeaderContainer>
+  );
 }

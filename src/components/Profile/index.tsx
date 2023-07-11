@@ -3,7 +3,6 @@ import {
   BookBookmark,
   Atom,
   TrendUp,
-  ChatTeardropDots,
   ArrowFatLinesUp,
 } from "phosphor-react";
 import {

@@ -21,11 +21,11 @@ export function Project({ repos }: Repos) {
     <ProjectContainer>
       <Icons>
         {repos.homepage && (
-          <a href={repos.homepage} target="_blank">
+          <a href={repos.homepage} target="_blank" title="Ver o deploy">
             <CloudArrowUp size={15} weight="fill" />
           </a>
         )}
-        <Link href={repos.html_url} target="_blank">
+        <Link href={repos.html_url} target="_blank" title="Ver no github">
           <GithubLogo size={15} weight="fill" />
         </Link>
       </Icons>

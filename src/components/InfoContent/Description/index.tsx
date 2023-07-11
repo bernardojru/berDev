@@ -1,19 +1,19 @@
 import { DescriptionContainer } from "./styles";
-import { GithubLogo, Globe, LinkedinLogo } from "phosphor-react";
+import { GithubLogo, LinkedinLogo } from "phosphor-react";
 import Link from "next/link";
 
 export function Description() {
   return (
     <DescriptionContainer>
       <h2>Sobre mim</h2>
-      <p>👋 Olá, meu nome é Bernardo, e tenho 19 anos.</p>
+      <p>👋 Olá, meu nome é Bernardo, e tenho 20 anos.</p>
       <p>
         Sou programador full-stack, apaixonado 💜 por tecnologia, e tenho 1 ano
         de experiência com essas tecnologias: Nextjs, TypeScript, TailwindCSS,
         Nodejs.
       </p>
 
-      <p>Quando não estou trabalhando, estou codando algum projeto pessoal.</p>
+      <p>Quando sempre codando algum projeto pessoal.</p>
       <footer>
         <Link href="https://github.com/bernardojru" target="_blank">
           <GithubLogo size={15} weight="fill" /> GitHub
@@ -24,9 +24,6 @@ export function Description() {
         >
           <LinkedinLogo size={15} weight="fill" /> Linkedin
         </Link>
-        {/* <Link href="#">
-          <Globe size={15} weight="bold" /> Jireh
-        </Link> */}
       </footer>
     </DescriptionContainer>
   );
