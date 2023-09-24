@@ -1,11 +1,10 @@
-import { HeaderContainer, NavBarMenu, RouteLink } from "./styles";
+import { HeaderContainer, NavBarMenu, BerDev } from "./styles";
 
 export function Header() {
   return (
     <HeaderContainer>
       <NavBarMenu>
-        <RouteLink href="/">Home</RouteLink>
-        <RouteLink href="/cv">CV</RouteLink>
+        <BerDev>{"<BerDev />"}</BerDev>
       </NavBarMenu>
     </HeaderContainer>
   );

@@ -36,12 +36,7 @@ export const NavBarMenu = styled("nav", {
   justifyContent: "center",
 });
 
-export const RouteLink = styled(Link, {
-  color: "$gray500",
-  textDecoration: "none",
-
-  "&:hover": {
-    color: "$gray200",
-    transition: "all .2s ease-in-out",
-  },
+export const BerDev = styled("h1", {
+  color: "$blue100",
+  cursor: "default",
 });

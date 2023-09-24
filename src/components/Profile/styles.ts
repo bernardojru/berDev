@@ -108,7 +108,7 @@ export const ButtonToTop = styled("button", {
   gap: "$2",
 
   "&:hover": {
-    background: "transparent",
+    background: "$blue100",
     transition: "all .4s ease-in-out",
   },
 

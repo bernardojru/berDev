@@ -11,7 +11,7 @@ export default function Portfolio() {
   return (
     <>
       <Head>
-        <title>berDev | Portfolio</title>
+        <title>BerDev | Portfolio</title>
       </Head>
       <PortfolioContainer>
         <Header />

@@ -13,7 +13,6 @@ export function Description() {
         Nodejs.
       </p>
 
-      <p>Quando sempre codando algum projeto pessoal.</p>
       <footer>
         <Link href="https://github.com/bernardojru" target="_blank">
           <GithubLogo size={15} weight="fill" /> GitHub
