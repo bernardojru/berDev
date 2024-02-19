@@ -23,10 +23,14 @@ export const globalStyles = globalCss({
   body: {
     "-webkit-font-smoothing": "antialiased",
     background: "$black",
+    fontFamily: "$default",
+    outline: "none",
+    border: "none",
   },
 
   "body, input, textarea, button": {
     outline: "none",
-    border: 'none',
+    border: "none",
+    boxShadow: "none",
   },
 });

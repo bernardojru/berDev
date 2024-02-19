@@ -1,23 +1,12 @@
-import { styled } from "../.";
+import { styled } from "..";
 
-export const PortfolioContainer = styled("div", {
-  background: "$black",
-  color: "$gray100",
-  display: "flex",
-  flexDirection: "column",
-  fontFamily: "$default",
-});
-
-export const PortfolioContent = styled("div", {
-  maxWidth: "100%",
+export const DescriptionPageContainer = styled("div", {
   display: "flex",
   justifyContent: "center",
-  gap: "$12",
-  padding: "4rem",
+  width: "60rem",
+  height: "100%",
 
-  "@media(max-width:1119px)": {
-    alignItems: "center",
-    flexDirection: "column",
-    padding: "2rem",
+  "@media(max-width:1296px)": {
+    width: "100%",
   },
 });

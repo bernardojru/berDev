@@ -1,25 +1,19 @@
 import Head from "next/head";
-import { PortfolioContainer, PortfolioContent } from "../styles/pages/home";
 import { globalStyles } from "../styles/global";
-import { Profile } from "../components/Profile";
-import { InfoContent } from "../components/InfoContent";
-import { Header } from "../components/Header";
+import { Description } from "../components/Description";
+import { DescriptionPageContainer } from "../styles/pages/home";
 
 globalStyles();
 
-export default function Portfolio() {
+export default function DescriptionPage() {
   return (
     <>
       <Head>
-        <title>BerDev | Portfolio</title>
+        <title>BerDev | Sobre</title>
       </Head>
-      <PortfolioContainer>
-        <Header />
-        <PortfolioContent>
-          <Profile />
-          <InfoContent />
-        </PortfolioContent>
-      </PortfolioContainer>
+      <DescriptionPageContainer>
+        <Description />
+      </DescriptionPageContainer>
     </>
   );
 }
