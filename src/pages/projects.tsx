@@ -6,7 +6,7 @@ export default function ProjectsPage() {
   return (
     <>
       <Head>
-        <title>BerDev | Stacks</title>
+        <title>BerDev | Projectos</title>
       </Head>
       <ProjectsPageContainer>
         <Projects />
