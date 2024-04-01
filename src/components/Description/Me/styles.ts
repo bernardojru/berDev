@@ -2,11 +2,11 @@ import { styled } from "../../../styles";
 
 export const MeContainer = styled("div", {
   maxHeight: "90vh",
-  padding: "$10",
   display: "flex",
   gap: "$10",
   flexDirection: "column",
   alignItems: "start",
+  paddingTop: "$10",
 
   h1: {
     fontSize: "$5xl",
@@ -53,31 +53,69 @@ export const MeContainer = styled("div", {
 });
 
 export const AboutMe = styled("section", {
+  width: "100%",
   display: "flex",
-  flexDirection: "column",
-  gap: "$3",
+  gap: "$5",
   lineHeight: "$tall",
 
-  section: {
-    display: "flex",
-    alignItems: "center",
-    gap: "$3",
+  ".me": {
+    width: "25rem",
+    height: "25rem",
+    borderRadius: "$lg",
+    border: "1px solid $gray600",
+  },
 
-    a: {
-      textDecoration: "none",
-      background: "$gray700",
+  div: {
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    gap: "$5",
+    lineHeight: "$base",
+
+    section: {
       display: "flex",
       alignItems: "center",
       gap: "$3",
-      padding: "$1 $3",
-      color: "$gray200",
-      borderRadius: "$lg",
-      cursor: "pointer",
 
-      "&:hover": {
-        color: "$white",
-        transition: "all .2s ease-in-out",
+      a: {
+        textDecoration: "none",
+        background: "$gray700",
+        display: "flex",
+        alignItems: "center",
+        gap: "$3",
+        padding: "$1 $3",
+        color: "$gray200",
+        borderRadius: "$lg",
+        cursor: "pointer",
+
+        "&:hover": {
+          color: "$white",
+          transition: "all .2s ease-in-out",
+        },
       },
+    },
+  },
+
+  "@media(max-width:1296px)": {
+    flexDirection: "column",
+  },
+});
+
+export const Tech = styled("section", {
+  display: "flex",
+  alignItems: "start",
+  justifyContent: "start",
+  width: "100%",
+
+  img: {
+    width: "3rem",
+    height: "3rem",
+    transition: "all .2s ease-in",
+    borderRadius: "$lg",
+    border: "1px solid $gray600 ",
+
+    "&:hover": {
+      transform: "translateY(-5px)",
     },
   },
 });
@@ -137,12 +175,40 @@ export const CompanyDetails = styled("section", {
   justifyContent: "center",
 
   span: {
-    backgroundColor: "$gray700",
+    background: "$gray900",
+    border: "1px solid",
+    borderColor: "$gray600",
     borderRadius: "$full",
     paddingLeft: "$2",
     paddingRight: "$2",
     fontWeight: "$bold",
+
     lineHeight: 2,
+  },
+
+  "@media(max-width:641px)": {
+    span: {
+      lineHeight: 1,
+      fontSize: "$sm",
+      paddingTop: "$2",
+      paddingBottom: "$2",
+    },
+  },
+  "@media(max-width:552px)": {
+    span: {
+      lineHeight: 1,
+      fontSize: "$xs",
+      paddingTop: "$2",
+      paddingBottom: "$2",
+    },
+  },
+  "@media(max-width:501px)": {
+    span: {
+      lineHeight: 1,
+      fontSize: "$xxs",
+      paddingTop: "$2",
+      paddingBottom: "$2",
+    },
   },
 });
 

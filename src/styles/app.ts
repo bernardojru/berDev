@@ -1,22 +1,19 @@
 import { styled } from ".";
 
 export const Container = styled("div", {
-  height: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
   color: "white",
 });
 
 export const Layout = styled("div", {
   color: "white",
   width: "80vw",
-  height: "90vh",
   display: "flex",
-  alignItems: "end",
-  justifyContent: "end",
-  position: "fixed",
-  right: 0,
-  bottom: 0,
-
-  overflowY: "scroll",
+  alignItems: "center",
+  justifyContent: "center",
 
   "@media(max-width:1296px)": {
     width: "100%",
@@ -27,10 +24,10 @@ export const Const = styled("div", {
   width: "80vw",
   height: "100%",
   display: "flex",
-  alignItems: "end",
+  alignItems: "center",
   justifyContent: "center",
 
   "@media(max-width:1296px)": {
-    width: "100%",
+    width: "90vw",
   },
 });

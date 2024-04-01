@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import ToqueMedia from "../../../assets/toquemedia.webp";
+import ME from "../../../assets/me.png";
 import MacAir from "../../../assets/mac-air-apple.png";
+import TechReactImg from "../../../assets/Tech/reactjs.svg";
+import TechNextImg from "../../../assets/Tech/nextjs.svg";
+import TechTypescriptImg from "../../../assets/Tech/typescript.svg";
 import {
   MeContainer,
   AboutMe,
@@ -12,33 +16,57 @@ import {
   MySetup,
   MacBookDetails,
   SpaceBottomContainer,
+  Tech,
 } from "./styles";
 import { GithubLogo, LinkedinLogo } from "phosphor-react";
+
+const images = [
+  {
+    slug: "reactjs",
+    img: TechReactImg,
+  },
+  {
+    slug: "nextjs",
+    img: TechNextImg,
+  },
+  {
+    slug: "typescript",
+    img: TechTypescriptImg,
+  },
+];
 
 export function Me() {
   return (
     <MeContainer>
       <AboutMe>
-        <h1>Sobre mim</h1>
-        <p>Prazer, meu nome é Bernardo, e tenho 20 anos.</p>
-        <p>
-          Sou programador Front-End, apaixonado por tecnologia, busco combinar o
-          que aprendo para criar códigos inovadores para resolver problemas,
-          tenho 1 ano de experiência desenvolvendo projectos com essas
-          tecnologias: Nextjs, TypeScript, TailwindCSS, .
-        </p>
+        <Image src={ME} alt="me" width={1000} height={1000} className="me" />
+        <div>
+          <h1>Sobre mim</h1>
+          <Tech>
+            {images.map(({ slug, img }) => (
+              <Image src={img} alt={slug} key={slug} />
+            ))}
+          </Tech>
+          <p>Prazer, meu nome é Bernardo, e tenho 20 anos.</p>
+          <p>
+            Sou programador Front-End, apaixonado por tecnologia, busco combinar
+            o que aprendo para criar códigos inovadores para resolver problemas,
+            tenho 1 ano de experiência desenvolvendo projectos com essas
+            tecnologias: Nextjs, TypeScript, TailwindCSS, .
+          </p>
 
-        <section>
-          <Link href="https://github.com/bernardojru" target="_blank">
-            <GithubLogo size={15} weight="fill" /> GitHub
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/bernardo-jos%C3%A9-aa2159225/"
-            target="_blank"
-          >
-            <LinkedinLogo size={15} weight="fill" /> Linkedin
-          </Link>
-        </section>
+          <section>
+            <Link href="https://github.com/bernardojru" target="_blank">
+              <GithubLogo size={15} weight="fill" /> GitHub
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/bernardo-jos%C3%A9-aa2159225/"
+              target="_blank"
+            >
+              <LinkedinLogo size={15} weight="fill" /> Linkedin
+            </Link>
+          </section>
+        </div>
       </AboutMe>
       <ExperienceMe>
         <div className="elementals">

@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <SidebarOpenContextProvider>
       <Container>
         <Header />
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Layout>
           <Const>
             <Component {...pageProps} />
