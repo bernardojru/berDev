@@ -6,7 +6,6 @@ export const AllCertificateContainer = styled("section", {
   gap: "$3",
   alignItems: "center",
   justifyContent: "center",
-  padding: "$10",
 
   img: {
     width: "60rem",

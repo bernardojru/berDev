@@ -51,7 +51,7 @@ export function Me() {
           <p>
             Sou programador Front-End, apaixonado por tecnologia, busco combinar
             o que aprendo para criar códigos inovadores para resolver problemas,
-            tenho 1 ano de experiência desenvolvendo projectos com essas
+            tenho 2 anos de experiência desenvolvendo projectos com essas
             tecnologias: Nextjs, TypeScript, TailwindCSS, .
           </p>
 
